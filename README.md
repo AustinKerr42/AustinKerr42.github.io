@@ -1,3 +1,4 @@
 # Personal Website
 
-### Work in progress.. content coming soon
+### Work in progress
+Content coming soon. We're jsut getting started.
