@@ -1,3 +1,3 @@
-### Personal Website
+# Personal Website
 
-## Work in progress.. content coming soon
+### Work in progress.. content coming soon
