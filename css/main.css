@@ -184,9 +184,15 @@ body {
         height: 35px;
         width: 35px;
     }
+    .mobile_only {
+        display: block !important;
+    }
   }
   @media screen and (max-width: 480px) {
     .logo {
         font-size: 150px;
+    }
+    .mobile_only {
+        display: block !important;
     }
   }
