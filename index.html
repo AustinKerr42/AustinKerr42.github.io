@@ -17,9 +17,10 @@
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-    <div class="navbar navbar-header">
-      <span class="text-right navbar-toggle mobile_only" style="display:none">MENU</span>
-      <button type="button" class="navbar-toggle text-right" data-toggle="collapse" data-target="#myNavbar">
+    <div class="navbar navbar-header text-right">
+      <!-- Condensed menu displays on mobile -->
+      <span class="navbar-toggle mobile_only" style="display:none">MENU</span>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
@@ -31,11 +32,12 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a data-toggle="collapse" data-target=".navbar-collapse" href="#about">ABOUT</a></li>
+        <!-- Need toggle and target to collapse correctly on mobile -->
+        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#about">ABOUT</a></li>
         <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#experience">EXPERIENCE</a></li>
-        <li><a href="#studyabroad">STUDY ABROAD</a></li>
-        <li><a href="#portfolio">BESIDES CODING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#studyabroad">STUDY ABROAD</a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#portfolio">BESIDES CODING</a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
