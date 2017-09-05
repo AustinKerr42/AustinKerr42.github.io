@@ -16,6 +16,13 @@ body {
       color: #303030;
       font-weight: 400;
       margin-bottom: 30px;
+  }
+  .phpicon{
+    font-size: 25px;
+    line-height: 1.375em;
+    color: #bb0826;
+    font-weight: 500;
+    margin-bottom: 30px;
   }  
   .jumbotron {
       background-color: #bb0826;
