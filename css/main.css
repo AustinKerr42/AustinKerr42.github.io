@@ -48,6 +48,15 @@ body {
       color: #bb0826;
       font-size: 200px;
   }
+  #resume {
+      border: 1px solid #bb0826;
+      color: #bb0826;
+      transition-duration: 0.4s;
+  }
+  #resume:hover {
+    background-color: #bb0826;
+    color: white;
+  }
   .thumbnail {
       padding: 0 0 15px 0;
       border: none;
