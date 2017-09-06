@@ -207,10 +207,14 @@ body {
     .logo {
         font-size: 150px;
     }
+    .btn-lg {
+        width: 50%;
+        margin-bottom: 35px;
+    }
     .mobile-only {
         display: block !important;
     }
     .mobile-center {
         text-align: center;
       }
-  }
+  } 
