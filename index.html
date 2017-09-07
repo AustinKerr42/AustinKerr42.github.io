@@ -13,21 +13,16 @@
   <link href="css/icon.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar navbar-header text-right">
       <!-- Condensed menu displays on mobile -->
-      <!-- <span class="navbar-toggle mobile-only" style="display:none">MENU</span> -->
       <button type="button" class="navbar-toggle mobile-only" data-toggle="collapse" data-target="#myNavbar" style="display:inline, hide;">
         <span style="color:white; float:left;"><strong>MENU &nbsp;</strong></span>
         <span class="glyphicon glyphicon-menu-hamburger" style="float:right; font-size:1.2em"></span>
       </button>
-      <!-- <ul class="nav navbar-nav">
-        <li>Austin Kerr</li>
-      </ul>
-      <img src="img/logos/isuLogo.gif" alt="Iowa State University" width="70" height="50;"> -->
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -35,7 +30,7 @@
         <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#about">ABOUT</a></li>
         <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#experience">EXPERIENCE</a></li>
         <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#studyabroad">STUDY ABROAD</a></li>
-        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#portfolio">BESIDES CODING</a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#besidesCoding">BESIDES CODING</a></li>
         <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">CONTACT</a></li>
       </ul>
     </div>
@@ -64,10 +59,12 @@
         look at the contact section at the bottom of this page.
       </p>
       <br>
+      <!-- Link to my current resume -->
       <a href="resume_05-09-17.pdf" target="_blank">
         <button class="btn btn-default btn-lg" id="resume">Resume</button>
       </a>
     </div>
+    <!-- My profile picture -->
     <div class="col-sm-4 text-right mobile-center">
       <img src="img/profile.jpg" width="244" height="330" style="border:4px solid black">
     </div>
@@ -77,11 +74,13 @@
 <!-- Container (Experience Section) -->
 <div id="experience" class="container-fluid bg-grey">
   <div class="row">
+    <!-- Left aligned laptop icon -->
     <div class="col-sm-4">
       <i class="material-icons logo slideanim">laptop</i>
     </div>
     <div class="col-sm-8">
       <h2>Work Experience</h2>
+      <!-- Summer internship at Principal -->
       <h4><strong>Principal Financial Group:</strong> I worked as an Application Development Support Intern on the
         ITSM and ESM Support Team during the summer of 2018.</h4>
 
@@ -178,7 +177,7 @@
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
+<!-- Container (Study Abroad Section) -->
 <div id="studyabroad" class="container-fluid bg-grey">
 <div class="row">
     <div class="col-sm-4">
@@ -193,8 +192,8 @@
             I took classes that I was able to apply to my major at Iowa State, as well as study a foreign language, experience 
             new culture, make friends from around the world, and travel all over Europe. While in Trondheim I took courses in 
             Norwegian language, climate change, Differential Equations, and Norwegian history. I learned how to manage my time 
-            efficiently while I was taking a full course load and doing my best to travel and explore the country and culture as 
-            much as I could, given my opportunity. I made friends from all over Europe and gained insight in how to effectively 
+            efficiently while taking a full course load, and doing my best to travel and explore the country and culture as 
+            much as I could at the same time. I made friends from all over Europe and gained insight in how to effectively 
             communicate with people from different backgrounds and whose first language isn't English. I'm very lucky I had 
             the opportunity to do this through Iowa State's study abroad program and I recommend it to everyone if they can.
         </p>
@@ -202,8 +201,8 @@
 </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center">
+<!-- Container (Besides Coding Section) -->
+<div id="besidesCoding" class="container-fluid text-center">
   <h2>Besides Coding</h2><br>
   <h4>How I spend my free time when I'm not coding</h4>
   <div class="row text-center slideanim">
@@ -246,45 +245,43 @@
         </p>
       </div>
     </div>
-  </div><br>
+  </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid text-center">
-  <h2 class="text-center">CONTACT</h2>
-  <a href="#myPage" title="To Top">
-      <span class="glyphicon glyphicon-chevron-up"></span>
+<footer id="contact" class="container-fluid text-center bg-grey">
+  <a href="#home" title="To Top">
+      <i class="glyphicon glyphicon-chevron-up"></i>
   </a>
-  <br><br><br>
+  <h2 class="text-center">CONTACT</h2>
+  <h4>Feel free to send me an email or take a look at my LinkedIn Profile</h4>
+
+  <br>
   <div class="row">
-    <!--images to linkedin, github, etc -->
-    <div class="col-sm-4 mb-3">
+    <!-- Image links to Github, LinkedIn, and my email -->
+    <div class="col-sm-4" style="margin-bottom:20px;">
       <a href="https://github.com/AustinKerr42" target="_blank" title="Github">
-          <img src="img/logos/github.jpg" width="60" height="60" class="contact">
+          <img src="img/logos/github.png" class="contact">
       </a>
     </div>
-    <div class="col-sm-4 mb-3">
+    <div class="col-sm-4" style="margin-bottom:20px;">
       <a href="https://www.linkedin.com/in/austin-kerr-97867b126" target="_blank" title="LinkedIn">
-          <img src="img/logos/linkedin.png" width="60" height="60" class="contact">
+          <img src="img/logos/linkedin.png" class="contact">
       </a>
     </div>
-    <div class="col-sm-4 mb-3">
-      <a href="mailto:akerr@iastate.edu">
-        <img src="img/logos/email.png" width="60" height="60" title="Email" class="contact">
+    <div class="col-sm-4">
+      <a href="mailto:akerr@iastate.edu" title="Send Email">
+        <img src="img/logos/email.png" class="contact">
         <br><strong>akerr@iastate.edu</strong>
       </a>
     </div>
-    <!-- <div class="col-sm-3">
-        <a href="https://www.facebook.com/austin.kerr.10" target="_blank" title="Facebook">
-            <img src="img/logos/facebook.jpg" width="60" height="60" class="contact"></a>
-    </div> -->
   </div>
-</div><br><br>
+</footer>
 
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, footer a[href='#home']").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior

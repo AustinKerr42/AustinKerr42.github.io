@@ -22,7 +22,7 @@ body {
     line-height: 1.375em;
     color: #bb0826;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }  
   .jumbotron {
       background-color: #bb0826;
@@ -56,6 +56,10 @@ body {
   #resume:hover {
     background-color: #bb0826;
     color: white;
+  }
+  .contact {
+    height: 60px;
+    width: 60px;
   }
   .thumbnail {
       padding: 0 0 15px 0;
