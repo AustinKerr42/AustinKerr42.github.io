@@ -60,7 +60,7 @@
       </p>
       <br>
       <!-- Link to my current resume -->
-      <a href="resume_05-09-17.pdf" target="_blank" class="btn btn-default btn-lg" id="resume">
+      <a href="resume_05-09-17.pdf" target="_blank" class="btn btn-default btn-lg button">
         Resume
       </a>
     </div>
@@ -80,10 +80,22 @@
     </div>
     <div class="col-sm-8">
       <h2>Work Experience</h2>
+      <!-- Summer internship at Cerner -->
+      <h4><strong>Cerner Corporation:</strong> During the summer of 2018 I will be working as a Software Intern for Cerner at their
+        Innovations Campus in Kansas City.<br>
+        <button class="btn btn-default btn-sm button workToggle">Show More</button>
+      </h4>
+      <div class="hideInitial">
+      <p><strong>Start Date:</strong> My first day at Cerner will be May 23rd.
+      </p>
+      </div><br>
+
       <!-- Summer internship at Principal -->
       <h4><strong>Principal Financial Group:</strong> I worked as an Application Development Support Intern on the
-        ITSM and ESM Support Team during the summer of 2018.</h4>
-
+        ITSM and ESM Support Team during the summer of 2017.<br>
+        <button class="btn btn-default btn-sm button workToggle">Show More</button>
+      </h4>
+      <div class="hideInitial">
       <p><strong>Main Role:</strong> Over the summer I redesigned and developed a business object for the ITSM and ESM support team.
         I worked with another intern to communicate with the product owner about the various business requirements and implement
         them in an intuitive way. After some training in how to use Principal's software and brainstorming for what should be
@@ -116,6 +128,7 @@
           recognized as one of the top three teams, in no particular order. Towards the end of the summer we had a meeting to hand 
           off the project to a full-time team at Principal that would be able to finish a production ready version of our project.
       </p>
+      </div>
     </div>
   </div>
 </div>
@@ -311,6 +324,15 @@ $(document).ready(function(){
           $(this).addClass("slide");
         }
     });
+  });
+
+  $(".workToggle").click(function(){
+    $(this).parent().next().toggle(750);
+    if($(this).text() == 'Show More'){
+      $(this).text('Show Less');
+    } else if($(this).text() == 'Show Less'){
+      $(this).text('Show More');
+    }
   });
 })
 </script>
