@@ -7,7 +7,7 @@ I'm continually adding more content as time allows.
 ### Built With
 ```
 HTML
-JavaScript
+JavaScript and JQuery
 CSS
 BootStrap
 ```
