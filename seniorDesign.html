@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Austin Kerr</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Austin Kerr">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/icon.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar navbar-header text-right">
+      <!-- Condensed menu displays on mobile -->
+      <button type="button" class="navbar-toggle mobile-only" data-toggle="collapse" data-target="#myNavbar" style="display:inline, hide;">
+        <span style="color:white; float:left;"><strong>MENU &nbsp;</strong></span>
+        <span class="glyphicon glyphicon-menu-hamburger" style="float:right; font-size:1.2em"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- Need toggle and target to collapse correctly on mobile -->
+        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="index.html">HOME</a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#overview">OVERVIEW</a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#indepth">IN DEPTH</a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#reflections">REFLECTIONS</a></li>
+        <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Austin Kerr</h1> 
+  <p>Senior Design: Spring 2018 - Fall 2018</p>
+</div>
+
+<!-- Container (Overview Section) -->
+<div id="overview" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Our Project</h2><br>
+      <h4>Passive monitoring system for tenants in assisted living homes.</h4>
+      <p>
+        Our project involved using sensros to collect health data from tenants in assisted living homes. The goal
+        behind our project is to give tenants an opportunity to keep their freedom by living on their own in an
+        apartment when the alternative would be for the tenats fmaily to put them in a retirement home.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Container (In Depth Section) -->
+<div id="indepth" class="container-fluid bg-grey">
+  <div class="row">
+    <!-- Left aligned ?sensor? icon -->
+    <div class="col-sm-4">
+      <i class="material-icons logo slideanim">laptop</i>
+    </div>
+    <div class="col-sm-8">
+      <h2>What we made</h2>
+      <!-- Topic 1 -->
+      <h4><strong>Sensors:</strong> We are using door sensors, flow meters, load cells, and a BSC to monitor the
+        health of the tenants. The sensor events will all be transmitted from the individual devices to a local
+        Raspberry Pi. That Pi will then wrap various events with the user id and send it to the cloud for storage.<br>
+        <button class="btn btn-default btn-sm button workToggle">More</button>
+      </h4>
+      <div class="hideInitial">
+      <p><strong>Door Sensors:</strong> Our team is using door sensors to determine when and how often a tenant is
+        eating. The sensors are attached to the cabinet doors that the tenats store their food in. When a tenant
+        opens one of the doors to make a meal an event will be triggered. This event will contain the id of the
+        sensor (to track which door was opened) and the time of the event.
+      </p>
+      <p><strong>Flow Meters:</strong> The flow meters are used both for monitoring the drinking and showering
+        habits of the tenants. One of the sensors will be connected to the shower and log events to track hygene. The
+        second sensor is attached to the sink in the kitchen and potentially the bathroom. These sensors are used to
+        track the tenants drinking habits. In all flow meter events the time, duration, rate, as well as the device
+        id will be included and transmitted to the local Pi.
+      </p>
+      <p><strong>Load Cell:</strong> Bathroom activity is another area that our solution is required to monitor. Our
+        team came up with load cells that are placed underneath the toilet seat to track that activity. When the load
+        cells register a high enough weight they will trigger an event to send to the Pi. This event will inlude the
+        device id, the weight, the duration, and the time of the event.
+      </p>
+      <p><strong>BCG</strong> Progress coming in the fall semester.
+      </p>
+      </div><br>
+
+      <!-- Topic 2 -->
+      <h4><strong>Backend:</strong> Our team used Amazon Web Services as well as Raspberry Pi's to connect our backend.<br>
+        <button class="btn btn-default btn-sm button workToggle">More</button>
+      </h4>
+      <div class="hideInitial">
+      <p><strong>Cloud Server:</strong> Our team is started out using Azure's Cosmos DB but ended up switching to AWS after we discovered how quickly the free hours run out using Cosmos DB. This definitely set our team back a bit but we were able to make the transition to AWS smoothly and are proud to say that everything works and is complete.
+      </p>
+
+        <p><strong>Local Server:</strong> The local servers are all Raspberry Pi 3's. These Pi's get data from the server Pi's (which are Raspberry Pi Zero W's) and then send that information to the Cloud Server along with the resident and user id connected to the Local Raspberry Pi Server.
+      </p>
+      </div><br>
+
+      <!-- Topic 3 -->
+      <h4><strong>App:</strong> Our team created an Android app to display the data collected to the user.<br>
+        <button class="btn btn-default btn-sm button workToggle">More</button>
+      </h4>
+      <div class="hideInitial">
+      <p><strong>Android:</strong> The app is meant for family members and loved ones of the tenants to use so they can keep track of the tenants health. Currently, the app has three different pages that allow the user to view the most recent events for each type (door, flow meter, and load cell) related to a certain tenant. Next semester we will be working with a statician from the university to interpret the events and alert users of the app if their tenant has a potential health risk.
+      </p>
+
+        <p><strong>Xamarin:</strong> Our team initally started with the goal of using Xamarin to make a cross-platform application but, after some technical difficulties, switched to Android development. Pending progress in the fall semester our team may revisit Xamarin.
+      </p>
+      </div><br>
+
+      <!-- Topic 4 -->
+      <h4><strong>Testing:</strong> About our prototypes and in home testing over the summer.<br>
+        <button class="btn btn-default btn-sm button workToggle">More</button>
+      </h4>
+      <div class="hideInitial">
+      <p><strong>Prototypes:</strong> While it is too early for our team to test the BCG sensor, we were able to create prototypes for the door sensor, the flow meter, and the load cell. For the door sensor we purchased a small cabinet to attach the sensors to which we then open and closed for varying amounts of time to simulate a door being open and closed in someone's home.
+        <br>The flow meter data was tested and collected by constructing a small aparatus which connects two bucket (one above the other) with PVC piping. The flow meter is placed among the PVC so when water is dumped into the top bucket and flows to the lower one the amount, time, and other data is collected and sent to the local Pi.
+        <br>Our team did not recieve the correct amount of load cells required to implement and test them this semester. As a result the load cell portion of the solution will be delayed until the fall semester.
+      </p>
+
+        <p><strong>In-home summer testing:</strong> Our client plans to go into assisted living homes in the Ames are and test the sensors in a true environment setting while the team is away.
+      </p>
+      </div><br>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Reflections Section) -->
+<div id="reflections" class="container-fluid text-center">
+  <h2>Reflections</h2><br>
+  <h4>Below are a few reflections and essays from the course</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+        <p><strong>R0</strong></p>
+        <p>
+          <a href="docs/reflection_cumulative.pdf" target="_blank">Cumulative Reflection</a></strong>
+        </p>
+    </div>
+    <div class="col-sm-4">
+        <p><strong>R1</strong></p>
+        <p>
+          <a href="docs/reflection_genEd.pdf" target="_blank">General Education Reflection</a></strong>
+        </p>
+    </div>
+    <div class="col-sm-4">
+        <p><strong>E0</strong></p>
+        <p>
+          <a href="docs/ethics_Essay.pdf" target="_blank">Ethics Essay</a></strong>
+        </p>
+    </div>
+    <br><br><br>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <p><strong>P0</strong></p>
+        <p>
+          <a href="docs/portfolio_narrativeAssignment.pdf" target="_blank">Narrative Assignment</a>
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <p><strong>P1</strong></p>
+        <p>
+          <a href="docs/submission_preFinal.pdf" target="_blank">Assignment Feedback</a>
+        </p>
+      </div>
+      <div class="col-sm-4">
+        <p><strong>P2</strong></p>
+        <p>
+          <a href="docs/feedback_preFinal.pdf" target="_blank">Prefinal Feedback</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<footer id="contact" class="container-fluid text-center bg-grey">
+  <a href="#home" title="To Top">
+      <i class="glyphicon glyphicon-chevron-up"></i>
+  </a>
+  <h2 class="text-center">CONTACT</h2>
+  <h4>Feel free to send me an email or take a look at my LinkedIn Profile</h4>
+
+  <br>
+  <div class="row">
+    <!-- Image links to Github, LinkedIn, and my email -->
+    <div class="col-sm-4" style="margin-bottom:20px;">
+      <a href="https://github.com/AustinKerr42" target="_blank" title="Github">
+          <img src="img/logos/github.png" class="contact" alt="GitHub">
+      </a>
+    </div>
+    <div class="col-sm-4" style="margin-bottom:20px;">
+      <a href="https://www.linkedin.com/in/austin-kerr-97867b126" target="_blank" title="LinkedIn">
+          <img src="img/logos/linkedin.png" class="contact" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="mailto:akerr@iastate.edu" title="Send Email">
+        <img src="img/logos/email.png" class="contact" alt="Send Email">
+        <br><strong>akerr@iastate.edu</strong>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#home']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+
+  $(".workToggle").click(function(){
+    $(this).parent().next().toggle(750);
+    if($(this).text() == 'Show More'){
+      $(this).text('Show Less');
+    } else if($(this).text() == 'Show Less'){
+      $(this).text('Show More');
+    }
+  });
+})
+</script>
+
+<!-- Google Analytics Tracking -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105830026-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
