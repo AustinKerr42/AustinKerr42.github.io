@@ -11,6 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="js/text.js"></script>
+  <script src="js/main.js"></script>
   <link href="css/icon.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -83,13 +84,9 @@
     <div class="col-sm-8">
       <h2>Work Experience</h2>
       <!-- Summer internship at Cerner -->
-      <h4><strong>Cerner Corporation:</strong> During the summer of 2018 I will be working as a Software Intern for Cerner at their
-        Innovations Campus in Kansas City.<br>
-        <button class="btn btn-default btn-sm button workToggle">More</button>
-      </h4>
+      <h4 id="cernerHeader"></h4>
       <div class="hideInitial">
-      <p><strong>Start Date:</strong> May 23rd, 2018.
-      </p>
+      <p id="cernerMain"></p>
       </div><br>
 
       <!-- Summer internship at Principal -->
@@ -110,52 +107,34 @@
     <div class="col-sm-4">
       <img src="img/logos/java.ico" alt="" width="50" height="50">
       <h4>Java</h4>
-      <p>I have taken Java courses in high school and college. I have created a few projects using this language,
-          including an Android App that utilizes Wi-Fi peer-to-peer to share music.
-      </p>
+      <p id="java"></p>
     </div>
     <div class="col-sm-4">
       <img src="img/logos/js.png" alt="" width="50" height="50">
       <h4>JavaScript</h4>
-      <p>I have used JavaScript a number of times in various projects and in course work. Most notably I used JS in my Desired States
-        Configuration project at Principal this past summer. I was introduced to the language in one of my courses during my
-        Junior year.
-      </p>
+      <p id="javascript"></p>
     </div>
     <div class="col-sm-4">
       <img src="img/logos/python.png" alt="" width="50" height="50">
       <h4>Python</h4>
-      <p>During Principal's Code Jam this past summer I needed to pick up python quickly and use it to create a data scraper for
-        our web app. Since then I have created a few other data scrapers for my own entertainment using python. Besides that, I have
-        been doing various coding problems on the internet to improve my skills with python.
-      </p>
+      <p id="python"></p>
     </div>
-  </div>
-  <br><br>
+  </div><br><br>
   <div class="row slideanim">
     <div class="col-sm-4">
       <img src="img/logos/sql.png" alt="" width="50" height="50">
       <h4>SQL</h4>
-      <p>After learning MySQL in a databases course at Iowa State I have had the opportunity to use the language in several
-        projects. I worked with a group of three other students to set up a database and use SQL statements to add and delete
-        data in an Android App we created.
-      </p>
+      <p id="sql"></p>
     </div>
     <div class="col-sm-4">
       <h4 class="phpicon"><strong>&lt;? php ?&gt;</strong></h4>
       <h4>PHP</h4>
-      <p>During my internship at Principal I had the chance to use php in our Desired States Configuration project. I led the
-        effort in connecting our front-end and back end as I had the most experience with the language. We created a solid 
-        foundation for the company to build off once our internships ended.
-      </p>
+      <p id="php"></p>
     </div>
     <div class="col-sm-4">
       <img src="img/logos/html.png" alt="" width="50" height="50">
       <h4>HTML/CSS/Bootstrap</h4>
-      <p>My dad taught me html and guided me in creating my first website when I was in sixth grade. I created a website
-        for National History Day which is a competition in which students are given a topic to research and then make a 
-        presentation about it. I had a lot of fun making it and ever since have been interested in programming.
-      </p>
+      <p id="html"></p>
     </div>
   </div>
 </div>
@@ -163,23 +142,11 @@
 <!-- Container (Study Abroad Section) -->
 <div id="studyabroad" class="container-fluid bg-grey">
 <div class="row">
-    <div class="col-sm-4">
-        <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
+    <div class="col-sm-4"><span class="glyphicon glyphicon-globe logo slideanim"></span></div>
     <div class="col-sm-8">
         <h2>Study Abroad</h2>
-        <h4>I had the opportunity to spend my fall semester of sophomore year in Trondheim, Norway at the Norwegian
-            University of Science and Technology (NTNU).</h4>
-        
-        <p>
-            I took classes that I was able to apply to my major at Iowa State, as well as study a foreign language, experience 
-            new culture, make friends from around the world, and travel all over Europe. While in Trondheim I took courses in 
-            Norwegian language, climate change, Differential Equations, and Norwegian history. I learned how to manage my time 
-            efficiently while taking a full course load, and doing my best to travel and explore the country and culture as 
-            much as I could at the same time. I made friends from all over Europe and gained insight in how to effectively 
-            communicate with people from different backgrounds and whose first language isn't English. I'm very lucky I had 
-            the opportunity to do this through Iowa State's study abroad program and I recommend it to everyone if they can.
-        </p>
+        <h4 id="norwayHeader"></h4>
+        <p id="norwayMain"></p>
     </div>
 </div>
 </div>
@@ -193,39 +160,21 @@
       <div class="thumbnail">
         <img src="img/climbing.JPG" title="Flatanger, Norway" alt="" width="400" height="300">
         <p><strong>Rock Climbing</strong></p>
-        <p>I started rock climbing the summer before my freshman year at Iowa State and have been obsessed with it ever since.
-          I climb indoors when I am in school and take trips to go climbing outdoors with my friends when I can. My favorite spot that
-          I have been is Flatanger, Norway, which has some of the most beautiful climbing in the world. Some closer spots that
-          are fun to go to as well are in Blue Mounds, Minnesota and Devil's Lake Wisconsin.
-        </p>
+        <p id="climbing"></p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="img/mfth.jpg" title="Student Challenge - 2012" alt="" width="400" height="300">
         <p><strong>Volunteering</strong></p>
-        <p>
-            I spent two summers in high school on the Student Leadership Board for Meals from the Heartland. They are a charity
-            that packages meals to send to people in need in Iowa and all over the world. Find out more about them here!
-            <br><strong><a href="https://mealsfromtheheartland.org" target="_blank">https://mealsfromtheheartland.org</a></strong>
-
-            <br><br>
-            I am also a founding member of Generation Pay It Forward which is an organization to raise money to 
-            provide underprivileged middle schoolers from my home town of Johnston, IA with free and reduced meals on weekends.
-            Click the link below to find out more.
-            <br><strong><a href="https://www.generationpayitforward.com" target="_blank">https://www.generationpayitforward.com</a></strong>
-        </p>
+        <p id="volunteering"></p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
         <img src="img/paris.jpg" title="Paris, France" alt="" width="400" height="300">
         <p><strong>Traveling</strong></p>
-        <p>I love to travel and take the opportunity to whenever I have the time and money (which can be tough as a student). I've
-          have visited a range of national parks with friends and family. I found out how much I want to explore Europe after I
-          studied abroad my sophomore year. Besides Norway I have been to Poland, France, Belgium, and the Netherlands but I am
-          looking to add more to that list as soon as I can!
-        </p>
+        <p id="travel"></p>
       </div>
     </div>
   </div>
@@ -233,90 +182,26 @@
 
 <!-- Container (Contact Section) -->
 <footer id="contact" class="container-fluid text-center bg-grey">
-  <a href="#home" title="To Top">
-      <i class="glyphicon glyphicon-chevron-up"></i>
-  </a>
+  <a href="#home" title="To Top"><i class="glyphicon glyphicon-chevron-up"></i></a>
   <h2 class="text-center">CONTACT</h2>
-  <h4>Feel free to send me an email or take a look at my LinkedIn Profile</h4>
+  <h4>Feel free to send me an email or take a look at my LinkedIn Profile</h4><br>
 
-  <br>
   <div class="row">
     <!-- Image links to Github, LinkedIn, and my email -->
     <div class="col-sm-4" style="margin-bottom:20px;">
       <a href="https://github.com/AustinKerr42" target="_blank" title="Github">
-          <img src="img/logos/github.png" class="contact" alt="GitHub">
-      </a>
+          <img src="img/logos/github.png" class="contact" alt="GitHub"></a>
     </div>
     <div class="col-sm-4" style="margin-bottom:20px;">
       <a href="https://www.linkedin.com/in/austin-kerr-97867b126" target="_blank" title="LinkedIn">
-          <img src="img/logos/linkedin.png" class="contact" alt="LinkedIn">
-      </a>
+          <img src="img/logos/linkedin.png" class="contact" alt="LinkedIn"></a>
     </div>
     <div class="col-sm-4">
       <a href="mailto:akerr@iastate.edu" title="Send Email">
         <img src="img/logos/email.png" class="contact" alt="Send Email">
-        <br><strong>akerr@iastate.edu</strong>
-      </a>
+        <br><strong>akerr@iastate.edu</strong></a>
     </div>
   </div>
 </footer>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#home']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-
-  $(".workToggle").click(function(){
-    $(this).parent().next().toggle(750);
-    if($(this).text() == 'Show More'){
-      $(this).text('Show Less');
-    } else if($(this).text() == 'Show Less'){
-      $(this).text('Show More');
-    }
-  });
-});
-</script>
-
-<!-- Google Analytics Tracking -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-105830026-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
 </body>
 </html>
