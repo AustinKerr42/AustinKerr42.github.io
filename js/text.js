@@ -41,7 +41,7 @@ var cerner = {
 
 var languages = {
     java: "I have taken Java courses in high school and college. I have created a few projects using this language, including an Android App that utilizes Wi-Fi peer-to-peer to share music.",
-    ruby: "",
+    ruby: "During my internship at Cerner, my team primarily used Ruby for their web application.",
     javascript: "I have used JavaScript a number of times in various projects and in course work. Most notably I used JS in my Desired States Configuration project at Principal this past summer. I was introduced to the language in one of my courses during my Junior year.",
     python: "During Principal's Code Jam this past summer I needed to pick up python quickly and use it to create a data scraper for our web app. Since then I have created a few other data scrapers for my own entertainment using python. Besides that, I have been doing various coding problems on the internet to improve my skills with python.",
     sql: "After learning MySQL in a databases course at Iowa State I have had the opportunity to use the language in several projects. I worked with a group of three other students to set up a database and use SQL statements to add and delete data in an Android App we created.",
