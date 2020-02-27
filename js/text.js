@@ -1,6 +1,6 @@
 var Text = {
     aboutMe: {
-        header: "I am currently on track to complete my Bachelor of Science at Iowa State University in Software Engineering in December of 2018.",
+        header: "I am currently working full time as a Software Engineer at Cerner in Kansas City.",
         main: "I was first introduced to programming by my father in sixth grade when he taught me html to create a website. Later in high school, after taking some intro engineering courses and a basic Java class, I knew that Iowa State was the school for me. I first declared Computer Engineering as my major but later switched to Software after my sophomore year. Since coming to Iowa State, I have learned a laundry list of programming languages, various tools and frameworks that are used in the industry and secured my first internship at Principal Financial. I have also studied abroad in Norway and have participated in a number of clubs during my time at Iowa State."
     },
     principal: {
@@ -11,7 +11,8 @@ var Text = {
     },
     cerner: {
         header: "<strong>Cerner Corporation:</strong> During the summer of 2018 I will be working as a Software Intern for Cerner at their Innovations Campus in Kansas City.<br><button class=\"btn btn-default btn-sm button workToggle\">More</button>",
-        main: "<strong>Start Date:</strong> May 23rd, 2018."
+        fulltime: "<strong>CRM:</strong> Feb 13th, 2018. More coming soon.",
+        intern: "<strong>Internship:</strong> May 23rd, 2018. More coming soon."
     },
     languages: {
         java: "I have taken Java courses in high school and college. I have created a few projects using this language, including an Android App that utilizes Wi-Fi peer-to-peer to share music.",
@@ -43,7 +44,8 @@ var Text = {
         $("#principalCodeJam").html(Text.principal.codeJam);
 
         $("#cernerHeader").html(Text.cerner.header);
-        $("#cernerMain").html(Text.cerner.main);
+        $("#cernerFullTime").html(Text.cerner.fulltime);
+        $("#cernerIntern").html(Text.cerner.intern);
 
         $("#norwayHeader").html(Text.studyAbroad.header);
         $("#norwayMain").html(Text.studyAbroad.main);
