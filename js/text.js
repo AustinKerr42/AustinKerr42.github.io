@@ -1,31 +1,4 @@
 var Text = {
-    loadText: function() {
-        $("#javascript").html(Text.languages.javascript);
-        $("#aboutHeader").html(Text.aboutMe.header);
-        $("#aboutMain").html(Text.aboutMe.main);
-
-        $("#principalHeader").html(Text.principal.header);
-        $("#principalMain").html(Text.principal.main);
-        $("#principalSecondary").html(Text.principal.secondary);
-        $("#principalCodeJam").html(Text.principal.codeJam);
-
-        $("#cernerHeader").html(Text.cerner.header);
-        $("#cernerMain").html(Text.cerner.main);
-
-        $("#norwayHeader").html(Text.studyAbroad.header);
-        $("#norwayMain").html(Text.studyAbroad.main);
-
-        $("#climbing").html(Text.besidesCoding.climbing);
-        $("#volunteering").html(Text.besidesCoding.volunteering);
-        $("#travel").html(Text.besidesCoding.travel);
-
-        $("#java").html(Text.languages.java);
-        $("#python").html(Text.languages.python);
-        $("#sql").html(Text.languages.sql);
-        $("#php").html(Text.languages.php);
-        $("#html").html(Text.languages.html);
-    },
-
     aboutMe: {
         header: "I am currently on track to complete my Bachelor of Science at Iowa State University in Software Engineering in December of 2018.",
         main: "I was first introduced to programming by my father in sixth grade when he taught me html to create a website. Later in high school, after taking some intro engineering courses and a basic Java class, I knew that Iowa State was the school for me. I first declared Computer Engineering as my major but later switched to Software after my sophomore year. Since coming to Iowa State, I have learned a laundry list of programming languages, various tools and frameworks that are used in the industry and secured my first internship at Principal Financial. I have also studied abroad in Norway and have participated in a number of clubs during my time at Iowa State."
@@ -57,6 +30,33 @@ var Text = {
         climbing: "I started rock climbing the summer before my freshman year at Iowa State and have been obsessed with it ever since. I climb indoors when I am in school and take trips to go climbing outdoors with my friends when I can. My favorite spot that I have been is Flatanger, Norway, which has some of the most beautiful climbing in the world. Some closer spots that are fun to go to as well are in Blue Mounds, Minnesota and Devil's Lake Wisconsin.",
         volunteering: "I spent two summers in high school on the Student Leadership Board for Meals from the Heartland. They are a charity that packages meals to send to people in need in Iowa and all over the world. Find out more about them here!<br><strong><a href=\"https://mealsfromtheheartland.org\" target=\"_blank\">https://mealsfromtheheartland.org</a></strong><br><br>I am also a founding member of Generation Pay It Forward which is an organization to raise money to provide underprivileged middle schoolers from my home town of Johnston, IA with free and reduced meals on weekends. Click the link below to find out more.<br><strong><a href=\"https://www.generationpayitforward.com\" target=\"_blank\">https://www.generationpayitforward.com</a></strong>",
         travel: "I love to travel and take the opportunity to whenever I have the time and money (which can be tough as a student). I've have visited a range of national parks with friends and family. I found out how much I want to explore Europe after I studied abroad my sophomore year. Besides Norway I have been to Poland, France, Belgium, and the Netherlands but I am looking to add more to that list as soon as I can!"
+    },
+
+    loadText: function() {
+        $("#javascript").html(Text.languages.javascript);
+        $("#aboutHeader").html(Text.aboutMe.header);
+        $("#aboutMain").html(Text.aboutMe.main);
+
+        $("#principalHeader").html(Text.principal.header);
+        $("#principalMain").html(Text.principal.main);
+        $("#principalSecondary").html(Text.principal.secondary);
+        $("#principalCodeJam").html(Text.principal.codeJam);
+
+        $("#cernerHeader").html(Text.cerner.header);
+        $("#cernerMain").html(Text.cerner.main);
+
+        $("#norwayHeader").html(Text.studyAbroad.header);
+        $("#norwayMain").html(Text.studyAbroad.main);
+
+        $("#climbing").html(Text.besidesCoding.climbing);
+        $("#volunteering").html(Text.besidesCoding.volunteering);
+        $("#travel").html(Text.besidesCoding.travel);
+
+        $("#java").html(Text.languages.java);
+        $("#python").html(Text.languages.python);
+        $("#sql").html(Text.languages.sql);
+        $("#php").html(Text.languages.php);
+        $("#html").html(Text.languages.html);
     }
 };
 
